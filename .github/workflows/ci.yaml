@@ -9,7 +9,7 @@ jobs:
         with:
           python-version: '3.10'
       - run: python -m pip install --upgrade pip
-      - run: python -m unittest discover src.tests
+      - run: python -m unittest discover src.test
   pylint:
     runs-on: ubuntu-latest
     steps:
