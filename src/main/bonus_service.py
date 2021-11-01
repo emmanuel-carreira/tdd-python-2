@@ -2,5 +2,6 @@ from src.main.employee import Employee
 
 
 def calculate_bonus(employee: Employee) -> float:
-    value = employee.salary * 0.1
-    return value if value <= 1000 else 0
+    if employee.salary > 10000:
+        raise Exception("Employee with salary greater than 10000 can't have bonus!")
+    return employee.salary * 0.1
