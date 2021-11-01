@@ -18,3 +18,6 @@ class Employee:
     @property
     def salary(self):
         return self._salary
+
+    def readjust_salary(self, readjustment: float) -> None:
+        self._salary *= readjustment
